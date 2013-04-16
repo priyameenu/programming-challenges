@@ -24,7 +24,7 @@ def largest_palindrome(text):
     while word_length > 1:
         word_length = text_length - left
 
-        for offset in xrange(text_length - word_length):
+        for offset in range(text_length - word_length):
             word = text[left-offset-1:text_length-offset]
 
             if is_palindrome(word):
